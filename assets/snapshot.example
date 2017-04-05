@@ -1,0 +1,22 @@
+// Link.js
+import React from 'react';
+import Link from '../Link.react';
+import renderer from 'react-test-renderer';
+
+it('renders correctly', () => {
+  const component = renderer.create(
+    <Link page="http://www.facebook.com">Facebook</Link>
+  ).toJSON();
+  expect(component).toMatchSnapshot();
+});
+
+// Snapshot file
+exports[`Link renders correctly 1`] = `
+<a
+  className="normal"
+  href="http://www.facebook.com"
+  onMouseEnter={[Function]}
+  onMouseLeave={[Function]}>
+  Facebook
+</a>
+`;
