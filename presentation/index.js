@@ -74,7 +74,7 @@ export default class Presentation extends React.Component {
           <LeftText>Works differently from most linters. Parses code into an Abstract Syntax Tree (AST), then prints out to disk using Wadler's algorithm</LeftText>
           <LeftText>Forces code style to be the same, because every character is printed by Prettier</LeftText>
           <LeftText>Few options at the moment (e.g. forces semi-colons), but more coming in the future</LeftText>
-          <Text padding="20px"><Link href="https://prettier.github.io/prettier/">https://prettier.github.io/prettier/</Link></Text>
+          <Text padding="20px"><Link href="https://prettier.github.io/prettier/">Github</Link></Text>
         </Slide>
 
         <Slide>
@@ -94,6 +94,7 @@ export default class Presentation extends React.Component {
           <LeftText>Combines Redux and <Link href="http://swarmjs.github.io/">Swarm.js</Link></LeftText>
           <LeftText>Log of Redux actions which is replicated to the server over websockets, which can then be projected into data (Event Sourcing)</LeftText>
           <LeftText>Because the client maintains an independent log of events, it can be considered "Offline First"</LeftText>
+          <Link href="https://github.com/logux">Github organisation</Link>
         </Slide>
 
         <Slide>
@@ -122,6 +123,7 @@ export default class Presentation extends React.Component {
           <LeftText>If the change is intended, then a new snapshot file is generated and committed</LeftText>
           <LeftText>Easier to write than normal unit tests and potentially can get greater coverage</LeftText>
           <LeftText>Can't really test behaviour or state changes</LeftText>
+          <Link href="https://facebook.github.io/jest/docs/snapshot-testing.html#content">Jest snapshot docs</Link>
         </Slide>
 
         <Slide>
@@ -141,6 +143,7 @@ export default class Presentation extends React.Component {
           <LeftText>Adds a <Code>meta.offline</Code> object to Redux actions configuring how they should be sent to the server</LeftText>
           <LeftText>Different to Logux - specifies no format for sending data to server</LeftText>
           <LeftText>It also does <S type="bold">not</S> provide a complete toolbox for offline support - requires <Code>ServiceWorker</Code> configuration</LeftText>
+          <Link href="https://github.com/jevakallio/redux-offline">Github</Link>
         </Slide>
 
         <Slide>
@@ -152,6 +155,7 @@ export default class Presentation extends React.Component {
           <LeftText>Seems like one of the best implementations, - can handle media queries & animations</LeftText>
           <LeftText>Uses ES6 template literals to write "real" CSS</LeftText>
           <LeftText>Although I'm still not convinced that in the long term just using CSS/Sass & BEM is a better solution</LeftText>
+          <Link href="https://github.com/styled-components/styled-components">Github</Link>
         </Slide>
 
         <Slide>
@@ -170,7 +174,7 @@ export default class Presentation extends React.Component {
         </Slide>
 
         <Slide>
-          <Heading size={4}><Link href="https://www.youtube.com/playlist?list=PLb0IAmt7-GS3fZ46IGFirdqKTIxlws7e0">Conference YouTube Playlist</Link></Heading>
+          <Heading size={4}><Link href="https://www.youtube.com/channel/UCV4LIEkC0S9KUAPDm2g4mNQ">Conference YouTube Channel</Link></Heading>
         </Slide>
 
       </Deck>
